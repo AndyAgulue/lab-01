@@ -11,7 +11,7 @@ p {
 header {
   width: 100%;
   height: 75px;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
   background-color: lemonchiffon;
@@ -21,7 +21,7 @@ header {
 #b {
   width: 100%;
   height: 150px;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
   background-color: burlywood;
@@ -31,7 +31,7 @@ header {
 #c {
   width: 100%;
   height: 125px;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
   background-color: khaki;
@@ -41,7 +41,7 @@ header {
 #d {
   width: 100%;
   height: 125px;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
   background-color: darkkhaki;
@@ -52,7 +52,7 @@ header {
   width: 50%;
   height: 250px;
   float: left;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
   background-color: bisque;
@@ -63,7 +63,7 @@ footer {
   width: 100%;
   height: 80px;
   float: left;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
   background-color: moccasin;
@@ -71,10 +71,84 @@ footer {
 }
 
 @media( min-width: 481px){
+  body {
+    min-width: 480px;
+    max-height: 767px;
+    margin: auto;
+  }
+  
+  p {
+    display: inline-block;
+  }
+  
+  header {
+    width: 100%;
+    height: 75px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(238, 225, 107);
+    border: thin black solid;
+  }
+  
+  #b {
+    width: 100%;
+    height: 150px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(232, 148, 38);
+    border: thin black solid;
+  }
+  
+  #c {
+    width: 100%;
+    height: 125px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(243, 225, 65);
+    border: thin black solid;
+  }
+  
+  #d {
+    width: 100%;
+    height: 125px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 227, 89);
+    border: thin black solid;
+  }
+  
+  .four-boxes {
+    width: 50%;
+    height: 250px;
+    float: left;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 168, 85);
+    border: thin black solid;
+  }
+  
+  footer {
+    width: 100%;
+    height: 80px;
+    float: left;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(192, 131, 26);
+    border: thin black solid;
+  }
+}
+
+@media( min-width: 1000px){
 
   body {
-    min-height: 768px;
-    max-width: 960px;
+    min-height: 769px;
+    max-width: 1000px;
     margin: auto;
   }
 
@@ -87,7 +161,6 @@ footer {
   #b {
     width: 20.83%;
     height: 600px;
-    /* display: flex; */
     float: left;
     justify-content: center;
     align-items: center;
@@ -115,7 +188,6 @@ footer {
     width: 19.79%;
     height: 250px;
     float: left;
-    /* display: flex; */
     justify-content: center;
     align-items: center;
     background-color: burlywood;
@@ -126,7 +198,6 @@ footer {
     width: 79.16%;
     height: 150px;
     float: left;
-    /* display: flex; */
     justify-content: center;
     align-items: center;
     background-color: purple;
